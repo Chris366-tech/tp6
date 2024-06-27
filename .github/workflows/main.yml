@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - uses: .github/actions/checkout@v4
+      - uses: actions/checkout@v4
       - id: foo
-        uses: .github/actions/@v1
+        uses: actions/@v1
         with:
           who-to-greet: 'Mona the Octocat'
       - run: echo random-number "$RANDOM_NUMBER"
